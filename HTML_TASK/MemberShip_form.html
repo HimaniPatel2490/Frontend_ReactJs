@@ -13,8 +13,8 @@
         <table>
             <tr>
                 <td> <b> <label for="">Name</label> </b> </td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
+                <td><input type="text" pattern="[A-Za-z]+" required></td>
+                <td><input type="text" pattern="[A-Za-z]+" required></td>
             </tr>
             <tr>
                 <td></td>
@@ -24,7 +24,7 @@
 
             <tr>
                 <th><label for="">Address</label></th>
-                <td colspan="2"><input type="text" size="45"></td>
+                <td colspan="2"><input type="text" size="45" pattern="[A-Z0-9a-z]+"></td>
             </tr>
             <tr>
                 <td></td>
@@ -53,7 +53,7 @@
 
             <tr>
                 <th><label for="">E-Mail</label></th>
-                <td><input type="email" placeholder="himanipatel@gmail.com"></td>
+                <td><input type="email" placeholder="himanipatel@gmail.com" pattern="[A-Za-z0-9._+\-\']+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$"></td>
             </tr>
             
             <tr>
@@ -80,7 +80,7 @@
 
             <tr>
                 <th><label for="">Home number</label></th>
-                <td><input type="text"></td>
+                <td><input type="text" pattern="[1-9]+" maxlength="6"></td>
                 <td><input type="text"></td>
             </tr>
             <tr>
@@ -92,6 +92,12 @@
             <tr>
                 <th><label for="">WebSite</label></th>
                 <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button>submit</button>
+                </td>
             </tr>
 
 

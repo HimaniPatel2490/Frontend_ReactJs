@@ -10,10 +10,11 @@
         <fieldset aria-setsize="600">
         <caption><h1>Complaints</h1>
         <h2>Help us improve our service</h2></caption>
+        <hr width="500" color="black">
         <hr width="500" size="5" color="black">
         <table align="center">
             <tr>
-                <th rowspan="2"><label for="">Full Name *</label></th>
+                <th rowspan="2"><label for="">Full Name <font color="red">*</font></label></th>
                 <td><input type="text"></td>
                 <td><input type="text"></td>
             </tr>
@@ -23,13 +24,13 @@
             </tr>
 
             <tr>
-                <th><label for="">Email *</label></th>
+                <th><label for="">Email <font color="red">*</font></label></th>
                 <td><input type="email"></td>
             </tr>
 
             <tr>
                 <th><label for="">Phone</label></th>
-                <td> <input type="tel"></td>
+                <td> <input type="" pattern="[0-9]{10}"maxlength="10"></td>
             </tr>
 
             <tr>
