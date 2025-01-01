@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="">
+        <label for="Full Name">Full Name</label>
+        <input type="text" placeholder="FirstName" title="FirstName" pattern="[a-z]{4,8}" id="Full Name" required>
+        <input type="text" placeholder="MiddleName" title="MiddleName" pattern="[a-z]{4,8}"required>
+        <input type="text" placeholder="LastName" title="LastName" required><br><br>
+
+        <label for="EmailAddress">EmailAddress</label>
+        <input type="email" placeholder="EmailAddress" title="EmailAddress" id="EmailAddress" placeholder="EmailAddress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"><br><br>
+
+        <label for="PhoneNumber">PhoneNumber</label>
+        <input type="tel" placeholder="PhoneNumber" title="phoneNumber" id="PhoneNumber" pattern="[0-9]{10}" required><br><br>
+
+        <label for="">Subject</label>
+        <select name="" id="Subject">
+            <option value="">FrontEnd</option>
+            <option value="">BackEnd</option>
+            <option value="">Database</option>
+            <option value="">D.S.A</option>
+        </select><br><br>
+
+        <label for="Message">Message</label>
+        <textarea name="" id="Message"  placeholder="Please Message Here"></textarea><br><br>
+
+        <button>Submit</button>
+
+    </form>
+    
+</body>
+</html>
