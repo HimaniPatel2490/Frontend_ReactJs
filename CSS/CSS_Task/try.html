@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Shoppy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    .container{
+        justify-content: center;
+    }
+    .navbar{
+        display: flex;
+        background-color: black;
+        height: 60px;
+        color: aliceblue;
+        justify-content: center;
+        align-items: center;
+
+        
+        
+    }
+    .navlist,a{
+        text-decoration: none;
+        color: rgb(224, 231, 233);
+        display: flex;
+        gap: 30px;
+        
+    }
+    .navlogo{
+        height: 60px;
+        width: 200px;
+        background-color: aquamarine;
+        color: black;
+        margin-left: 200px;
+        
+
+    }
+    #cartlogo{
+        color: black;
+        font-size: 40px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+   
+     li{
+        list-style: none;
+    }
+   .shortcodes2{
+        background-color: aliceblue;
+        color: black;
+        display: none;
+   } 
+   .navlist:hover .shortcodes{
+    display: block;
+   } 
+
+   ul h4::after{
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: rgb(28, 140, 91);
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .5s;
+   }
+   ul h4::before{
+    width: 100%;
+   }
+
+   
+</style>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <ul class="navlist">
+            <h4><a href="">Home</a></h4>
+            <h4><a href="">About</a></h4>
+            <h4><a href="">Men's Wear</a></h4>
+            <h4><a href="">Woman's Wear</a></h4>
+            <h4><a href="">Short Codes</a>
+                <ul class="shortcodes">
+                    <li>Web Icons</li>
+                    <li>Typography</li>
+                </ul>
+            </h4>
+            <h4><a href="">Contact</a></h4>
+            </ul>
+            <div class="navlogo">
+                <a href="" id="cartlogo"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

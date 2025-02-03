@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Nested List</title>
+    <style>
+        .navlist .list{
+            display: inline-block;
+            background-color: rgb(120, 144, 231);
+            padding: 10px 20px;
+            position: relative;
+        }
+        .nav{
+            list-style: none;
+            position: absolute;
+            background-color:rgb(231, 120, 231);
+            top: 100%;
+            left: 0;
+            padding: 0;
+            display: none;
+        }
+        .nested{
+            list-style: none;
+            position: absolute;
+            background-color:rgb(83, 11, 83);
+            top: 25%;
+            left: 100%;
+            padding: 0;
+            display: none;
+
+        }
+        
+        .nav li{
+            padding: 5px 10px;
+            border: 2px solid;
+        }
+        .nested li{
+            padding: 5px 10px;
+            border: 2px solid;  
+        }
+        .list:hover .nav{
+            display: block;
+        }
+       
+        .nest:hover .nested{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navlist">
+        <li class="list">Home
+            <ul class="nav">
+                <li>Home 1</li>
+                <li class="nest">Home 2
+                    <ul class="nested">
+                        <li>Nest 1</li>
+                        <li>Nest 2</li>
+                        <li>Nest 3</li>
+                    </ul>
+                </li>
+                <li>Home 3</li>
+                <li>Home 4</li>
+            </ul>
+        </li>
+        <li class="list">About
+            <ul class="nav">
+                <li>About 1</li>
+                <li>About 2</li>
+                <li>About 3</li>
+                <li>About 4</li>
+            </ul>
+        </li>
+        <li class="list">Contact</li>
+        <li class="list">Help</li>
+    </ul>
+</body>
+</html>
