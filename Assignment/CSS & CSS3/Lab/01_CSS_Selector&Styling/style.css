@@ -1,0 +1,52 @@
+*{
+    background-color: black;
+}
+body{
+    text-align: center;
+    align-items: center;
+}
+h1{
+    color: antiquewhite;
+    font-size: 50px;
+    text-align: center;
+    
+} 
+.form{
+    width: 50%;
+    background-color: bisque;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+} 
+
+input{
+    display: flex;
+    background-color: antiquewhite;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    margin-top: 10px;
+    justify-content: center;
+
+}
+textarea{
+    display: flex;
+    background-color: antiquewhite;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+button{
+    background-color: lightsalmon;
+    color:darkred;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}
