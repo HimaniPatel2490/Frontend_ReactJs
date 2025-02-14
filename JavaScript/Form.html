@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error { color: red; font-size: 14px; }
+        form { max-width: 300px; margin: auto; padding: 20px; border: 1px solid #ccc; }
+        input, button { width: 100%; padding: 10px; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <small id="nameError" class="error"></small>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <small id="emailError" class="error"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <small id="passwordError" class="error"></small>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            let isValid = true;
+
+            // Name Validation
+            let name = document.getElementById("name").value.trim();
+            if (name === "") {
+                showError("nameError", "Name is required");
+                isValid = false;
+            } else {
+                showError("nameError", "");
+            }
+
+            // Email Validation
+            let email = document.getElementById("email").value.trim();
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                showError("emailError", "Enter a valid email");
+                isValid = false;
+            } else {
+                showError("emailError", "");
+            }
+
+            // Password Validation (Minimum 6 characters)
+            let password = document.getElementById("password").value.trim();
+            if (password.length < 6) {
+                showError("passwordError", "Password must be at least 6 characters");
+                isValid = false;
+            } else {
+                showError("passwordError", "");
+            }
+
+            // Submit form if all fields are valid
+            if (isValid) {
+                alert("Form submitted successfully!");
+                this.submit(); // Submit the form
+            }
+        });
+
+        // Function to show error messages
+        function showError(id, message) {
+            document.getElementById(id).innerText = message;
+        }
+    </script>
+
+</body>
+</html>

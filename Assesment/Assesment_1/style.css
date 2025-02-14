@@ -1,0 +1,89 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  /* Heading */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b00; 
+  }
+  
+  /* Form container */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  /* Labels */
+  label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  /* Inputs, textarea, select */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Radio buttons container */
+  .gender-container {
+    margin-top: 5px;
+  }
+  
+  /* Radio labels spacing */
+  .gender-label {
+    margin-right: 15px;
+    margin-left: 5px;
+    font-weight: normal;
+  }
+  
+  /* Checkboxes container */
+  .qualifications-container {
+    margin-top: 5px;
+  }
+  
+  .qualifications-container input {
+    margin-right: 5px;
+  }
+  
+  /* Submit button */
+  input[type="submit"] {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
