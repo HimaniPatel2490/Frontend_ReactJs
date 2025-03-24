@@ -1,0 +1,31 @@
+@bg-color : lightcoral;
+@color : black;
+
+// nesting
+.main{
+    list-style: none;
+    li{
+        display: inline-block;
+        background-color: @bg-color;
+        padding: 10px 20px;
+        
+    }
+}
+.flex(@data){
+    display: flex;
+    justify-content: @data;
+}
+.list{
+    display: flex;
+    list-style: none;
+    li{
+        background-color: @color;
+        padding: 10px 20px;
+        margin-right: 10px;
+        
+    }
+}
+.main{
+    .flex(start);
+
+}

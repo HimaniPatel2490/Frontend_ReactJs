@@ -1,0 +1,21 @@
+.main {
+  list-style: none;
+}
+.main li {
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 10px 20px;
+}
+.list {
+  display: flex;
+  list-style: none;
+}
+.list li {
+  background-color: black;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+.main {
+  display: flex;
+  justify-content: start;
+}

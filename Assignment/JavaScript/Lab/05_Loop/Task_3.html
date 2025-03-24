@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a do-while loop that continues to ask the user for input until they enter a 
+        number greater than 10.  </title> 
+</head>
+<body>
+    <script>
+        let num;
+
+        do {
+            num = parseFloat(prompt("Enter a number greater than 10:"));
+        } while (num <= 10);
+
+        console.log("You entered a valid number:", num);
+        document.write("You entered a valid number:", num);
+
+
+    </script>
+    
+</body>
+</html>

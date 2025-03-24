@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/bookmyshow-logo-vector.png" alt="" width="120" height="40"></a>
+            <!-- Responsive toggler Button -->
+           <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+           </button>
+           <!-- Search Button -->
+           <form class="d-flex w-75">
+            <input class="form-control me-2" type="search" data-bs-toggle="modal" data-bs-target="#exampleModal" placeholder="Search" aria-label="Search">
+          </form>
+          <!-- City Selector -->
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Ahmedabad
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Mumbai</a></li>
+              <li><a class="dropdown-item" href="#">Surat</a></li>
+              <li><a class="dropdown-item" href="#">Baroda</a></li>
+            </ul>
+          </div>
+             <!-- SignIn button         -->
+           </div>
+              <button class="btn btn-danger" type="submit">
+                Signin
+              </button>
+            <!-- TogglerButton -->
+            <button
+            class="navbar-toggler d-block"
+            type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+        </div>
+        
+      </nav>
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="button active btn btn-light" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="button btn btn-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> <div class="row">
+            <div class="col-md-3">
+              <h4 class="text-danger">HINDI</h4>
+              <p>Captain America: Brave New World (Hindi) (UA16) ❤️ 69%</p>
+              <p>Chhaava ❤️ 93%</p>
+              <p>Crazy (UA13) ❤️ 79%</p>
+              <p>Deva (UA16) ❤️ 75%</p>
+              <p>Dil To Pagal Hai (U) ❤️ 94%</p>
+              <p>Fashion (A) ❤️ 80%</p>
+              <p>Footage (A) NEW ❤️ 10%</p>
+              <p>Gangs of Wasseypur (A) ❤️ 90%</p>
+              <p>Highway (UA) ❤️ 74%</p>
+              <p>Legally Veer (UA) NEW ❤️ 99%</p>
+          </div>
+  
+          <!-- Column 2 -->
+          <div class="col-md-3">
+              <h4 class="text-danger">GUJARATI</h4>
+              <p>Faati Ne? (UA16) ❤️ 92%</p>
+              <p>Jethalal Na Bhavada (UA7) NEW</p>
+              <p>Mom Tane Nai Samjay (UA13) ❤️ 83%</p>
+              <p>Umbarro (UA13) ❤️ 91%</p>
+  
+              <h4 class="text-danger mt-3">TAMIL</h4>
+              <p>Dragon (UA16) ❤️ 93%</p>
+  
+              <h4 class="text-danger mt-3">ENGLISH</h4>
+              <p>A Real Pain (A) ❤️ 82%</p>
+              <p>Captain America: Brave New World (3D) (UA16) ❤️ 69%</p>
+              <p>Conclave (UA13) ❤️ 83%</p>
+              <p>Flow (U) ❤️ 92%</p>
+              <p>Mickey 17 NEW ❤️ 83%</p>
+              <p>The Brutalist (A) ❤️ 80%</p>
+          </div>
+  
+          <!-- Column 3 -->
+          <div class="col-md-3">
+              <h4 class="text-danger">TELUGU</h4>
+              <p>Seethamma Vakitlo Sirimalle Chettu (U) ❤️ 97%</p>
+  
+              <h4 class="text-danger mt-3">MARATHI</h4>
+              <p>Chiki Chiki Booboom Boom (UA13) ❤️ 85%</p>
+  
+              <h4 class="text-danger mt-3">MALAYALAM</h4>
+              <p>Officer on Duty (UA16) ❤️ 92%</p>
+  
+              <h4 class="text-danger mt-3">SPANISH</h4>
+              <p>Emilia Perez (A) ❤️ 82%</p>
+  
+              <h4 class="text-danger mt-3">OTHERS</h4>
+              <p>The Monkey (A) NEW ❤️ 71%</p>
+              <p>Wicked (UA) ❤️ 76%</p>
+          </div>
+  
+          <!-- Column 4 -->
+          <div class="col-md-3">
+              <h4 class="text-danger">MORE MOVIES</h4>
+              <p>Mere Husband Ki Biwi (UA13) ❤️ 69%</p>
+              <p>Mufasa: The Lion King (Hindi) (U) ❤️ 84%</p>
+              <p>Queen (13+) ❤️ 80%</p>
+              <p>Road, Movie (UA) ❤️ 80%</p>
+              <p>Sanam Teri Kasam (U) ❤️ 85%</p>
+              <p>Shaadi Mein Zaroor Aana (UA) ❤️ 81%</p>
+              <p>Sky Force (UA13) ❤️ 89%</p>
+              <p>Superboys of Malegaon (UA) ❤️ 85%</p>
+          </div>
+        </div></div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row">
+              <!-- Column 1 -->
+              <div class="col-md-4">
+                  <ul>
+                      <li>PVR: Palladium Mall, Ahmedabad</li>
+                      <li>PVR: Acropolis, Ahmedabad</li>
+                      <li>Cinepolis: Nexus Ahmedabad One</li>
+                      <li>PVR: Arved Transcube, Ahmedabad</li>
+                      <li>INOX: Himalaya Mall, Drive In Road, Ahmedabad</li>
+                      <li>City Gold: Ashram Road</li>
+                      <li>Rajhans Cinemas: Vastral</li>
+                      <li>NY Cinemas: Swagat Mall</li>
+                      <li>Mango Plus Cinemas: Nikol</li>
+                      <li>Rajhans Cinemas: The CBD Mall, Zundal Circle</li>
+                      <li>NY Cinemas: Chandkheda</li>
+                      <li>Mukta A2 Cinemas: The Retail Park (TRP) Bopal</li>
+                  </ul>
+              </div>
+      
+              <!-- Column 2 -->
+              <div class="col-md-4">
+                  <ul>
+                      <li>Wide Angle: Ahmedabad</li>
+                      <li>Connplex Cinemas: Prahladnagar</li>
+                      <li>PVR: Satyamev Emporio Odhav, Ahmedabad</li>
+                      <li>PVR: Motera, Ahmedabad</li>
+                      <li>Rajhans Cinemas: Nikol</li>
+                      <li>SB Multiplex: Agora Mall</li>
+                      <li>Connplex Cinemas (Signature): Gandhinagar</li>
+                      <li>Apple Multiplex: Gota, Ahmedabad</li>
+                      <li>Connplex Cinemas: Parimal</li>
+                      <li>Mukta A2 Cinemas: Chandkheda</li>
+                      <li>Connplex Cinemas (Luxuriance): SBR</li>
+                      <li>White Screen Cinema (Five 11): Gandhinagar</li>
+                  </ul>
+              </div>
+      
+              <!-- Column 3 -->
+              <div class="col-md-4">
+                  <ul>
+                      <li>Connplex Cinemas: Shilaj</li>
+                      <li>Mukta A2 Shiv Cinema: Ahmedabad</li>
+                      <li>Mukta A2 Cinemas: Rajyash, South Vasna, Ahmedabad</li>
+                      <li>City Gold: Bopal</li>
+                      <li>Mukta A2 Cinemas: Ratnanjali Square Satellite</li>
+                      <li>Classic Cinema, Kudasan: Gandhinagar</li>
+                      <li>Banana Smartplex: SBR, Thaltej</li>
+                      <li>Connplex Cinemas (Signature): Gota</li>
+                      <li>Apple Cinema: Bapunagar</li>
+                      <li>Devi Multiplex: Naroda</li>
+                      <li>K Sera Sera: Iskon Circle, SG Highway</li>
+                      <li>Cineprime Cinema: Nikol</li>
+                  </ul>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+  <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Hey!</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="mb-3">
+          <button class="btn btn-danger w-100">Login / Register</button>
+      </div>
+      
+      <ul class="list-group">
+          <li class="list-group-item"><strong>Notifications</strong></li>
+          <li class="list-group-item text-muted">Your Orders <br><small>View all your bookings & purchases</small></li>
+          <li class="list-group-item text-muted">Stream Library <br><small>Rented & Purchased Movies</small></li>
+          <li class="list-group-item"><strong>Play Credit Card</strong><br><small>View your Play Credit Card details and offers</small></li>
+          <li class="list-group-item"><strong>Help & Support</strong><br><small>View commonly asked queries and Chat</small></li>
+          <li class="list-group-item text-muted">Accounts & Settings <br><small>Location, Payments, Permissions & More</small></li>
+          <li class="list-group-item"><strong>Rewards</strong><br><small>View your rewards & unlock new ones</small></li>
+          <li class="list-group-item"><strong>BookAChange</strong></li>
+      </ul>
+  </div>
+</div>
+
+  <!-- Secondary NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <ul class="list-group list-group-horizontal p-1">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+      <div class="list-group d-flex list-group-horizontal">
+        <a href="#" class="list-group-item list-group-item-action">second</a>
+        <a href="#" class="list-group-item list-group-item-action">third</a>
+        <a href="#" class="list-group-item list-group-item-action">fourth</a> 
+      </div>
+    </div>
+  </nav>
+
+  <!-- image Slider -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/slide1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/slide2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/slide3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/slide4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Section1 -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="container">
+       <div class="carousel-inner pt-5">
+      <h2>Recommented Movies</h2>
+      <div class="carousel-item active">
+        
+        <div class="container mt-4">
+          <div class="row g-4">
+              <!-- Movie Card 1 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img1.png" class="card-img-top" alt="Chhaava">
+                      <div class="card-body">
+                          <h5 class="card-title">Chhaava</h5>
+                          <p class="card-text">Action/Drama/Historical</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 2 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img2.png" class="card-img-top" alt="Umbarro">
+                      <div class="card-body">
+                          <h5 class="card-title">Umbarro</h5>
+                          <p class="card-text">Comedy/Drama/Family</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 3 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img3.png" class="card-img-top" alt="Faati Ne?">
+                      <div class="card-body">
+                          <h5 class="card-title">Faati Ne?</h5>
+                          <p class="card-text">Comedy/Horror</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 4 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img4.png" class="card-img-top" alt="Crazxy">
+                      <div class="card-body">
+                          <h5 class="card-title">Crazxy</h5>
+                          <p class="card-text">Drama/Thriller</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 5 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img5.png" class="card-img-top" alt="Mere Husband Ki Biwi">
+                      <div class="card-body">
+                          <h5 class="card-title">Mere Husband Ki Biwi</h5>
+                          <p class="card-text">Comedy/Romantic</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+      
+      <div class="carousel-item">
+        <div class="container mt-4">
+          <div class="row g-4">
+              <!-- Movie Card 1 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img6.png" class="card-img-top" alt="Chhaava">
+                      <div class="card-body">
+                          <h5 class="card-title">Chhaava</h5>
+                          <p class="card-text">Action/Drama/Historical</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 2 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img7.png" class="card-img-top" alt="Umbarro">
+                      <div class="card-body">
+                          <h5 class="card-title">Umbarro</h5>
+                          <p class="card-text">Comedy/Drama/Family</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 3 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img8.png" class="card-img-top" alt="Faati Ne?">
+                      <div class="card-body">
+                          <h5 class="card-title">Faati Ne?</h5>
+                          <p class="card-text">Comedy/Horror</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 4 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img9.png" class="card-img-top" alt="Crazxy">
+                      <div class="card-body">
+                          <h5 class="card-title">Crazxy</h5>
+                          <p class="card-text">Drama/Thriller</p>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Movie Card 5 -->
+              <div class="col">
+                  <div class="card">
+                      <img src="/MovieCard/img10.png" class="card-img-top" alt="Mere Husband Ki Biwi">
+                      <div class="card-body">
+                          <h5 class="card-title">Mere Husband Ki Biwi</h5>
+                          <p class="card-text">Comedy/Romantic</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+   
+  <!-- Section 2 -->
+   <div class="container pt-5">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/Section2.png" class="d-block w-100" alt="...">
+      </div>
+      </div>
+  </div>
+</div>
+
+<!-- Premieres Section -->
+<div class=".container-fluid bg-dark text-white">
+  <div class="container mt-4">
+    <div class="d-flex align-items-center mb-3">
+        <img src="/premiere/play_icon.jpeg" alt="Premiere" width="40">
+        <h2 class="ms-2 mb-0">PREMIERE</h2>
+    </div>
+    <p>Watch new movies at home, every Friday</p>
+
+    <h3>Premieres</h3>
+    <p>Brand new releases every Friday</p>
+
+    <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-3">
+                    <div class="col">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="/premiere/img1.png" class="card-img-top" alt="Movie 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Je Tere Naal Pyar Na Hunda</h5>
+                                <p class="card-text">Punjabi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="/premiere/img2.png" class="card-img-top" alt="Movie 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Tara - The Lost Star</h5>
+                                <p class="card-text">Nepali</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="/premiere/img3.png" class="card-img-top" alt="Movie 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Dominique</h5>
+                                <p class="card-text">English</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="/premiere/img4.png" class="card-img-top" alt="Movie 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Barah X Barah</h5>
+                                <p class="card-text">Hindi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-dark text-white border-0">
+                            <img src="/premiere/img5.png" class="card-img-top" alt="Movie 5">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Grafted</h5>
+                                <p class="card-text">English</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+</div>
+
+
+<!-- Trending Searches -->
+    <div class="bg-light">
+      <div class="container mt-4">
+        <h3 class="fw-bold">Trending Searches Right Now</h3>
+
+        <div class="d-flex flex-wrap gap-3 m-5">
+          <div class="row">
+            <div class="p-3 bg-white shadow-sm rounded col-5 m-1">
+                <span class="text-danger fw-bold">ICC Mens Champions Trophy 2025 Finals (IND Vs NZ)</span><br>
+                <small class="text-secondary">Movies</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-1 m-1">
+                <span class="text-danger fw-bold">Chhaava</span><br>
+                <small class="text-secondary">Movies</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-3 m-1">
+                <span class="text-danger fw-bold">Mumbai Indians vs Gujarat Titans</span><br>
+                <small class="text-secondary">Sports</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-1 m-1">
+                <span class="text-danger fw-bold">Umbarro</span><br>
+                <small class="text-secondary">Movies</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-3 m-1">
+                <span class="text-danger fw-bold">YO YO HONEY SINGH NIGHT</span><br>
+                <small class="text-secondary">Events</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-3 m-1">
+                <span class="text-danger fw-bold">Mumbai Indians - IPL 2025</span><br>
+                <small class="text-secondary">Sports</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-3 m-1">
+                <span class="text-danger fw-bold">Mumbai Indians vs Gujarat Giants</span><br>
+                <small class="text-secondary">Sports</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-4 m-1">
+                <span class="text-danger fw-bold">Sonu Nigam Live in Concert - Ahmedabad</span><br>
+                <small class="text-secondary">Events</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-2 m-1">
+                <span class="text-danger fw-bold">HOLI POOL PARTY</span><br>
+                <small class="text-secondary">Activities</small>
+            </div>
+            <div class="p-3 bg-white shadow-sm rounded col-2 m-1">
+                <span class="text-danger fw-bold">Sanam Teri Kasam</span><br>
+                <small class="text-secondary">Movies</small>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+
+</body>
+</html>
