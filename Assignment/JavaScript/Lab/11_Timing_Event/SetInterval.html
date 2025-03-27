@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animated Digital Clock</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .clock {
+            font-size: 3rem;
+            display: flex;
+        }
+        .digit {
+            display: inline-block;
+            width: 1ch;
+            overflow: hidden;
+        }
+        .digit span {
+            display: block;
+            animation: tick 60s steps(60) infinite;
+        }
+        .digit.minutes span {
+            animation-duration: 3600s;
+        }
+        .digit.hours span {
+            animation-duration: 43200s;
+        }
+        @keyframes tick {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="clock">
+    <div class="digit hours">
+        <span>00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+</span>
+    </div>
+    <div>:</div>
+    <div class="digit minutes">
+        <span>00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+</span>
+    </div>
+    <div>:</div>
+    <div class="digit seconds">
+        <span>00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+</span>
+    </div>
+</div>
+
+</body>
+</html>

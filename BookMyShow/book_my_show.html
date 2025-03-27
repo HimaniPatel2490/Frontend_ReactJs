@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My show</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="/bookmyshow-logo-vector.png" alt="" width="120" height="40"></a>
+              <!-- Responsive toggler Button -->
+             <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+             <!-- Search Button -->
+             <form class="d-flex w-75">
+              <input class="form-control me-2" type="search" data-bs-toggle="modal" data-bs-target="#exampleModal" placeholder="Search" aria-label="Search">
+            </form>
+            <!-- City Selector -->
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                Ahmedabad
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                <li><a class="dropdown-item" href="#">Surat</a></li>
+                <li><a class="dropdown-item" href="#">Baroda</a></li>
+              </ul>
+            </div>
+               <!-- SignIn button         -->
+             </div>
+                <button class="btn btn-danger" type="submit">
+                  Signin
+                </button>
+              <!-- TogglerButton -->
+              <button
+              class="navbar-toggler d-block"
+              type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- modal -->
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="button active btn btn-light" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="button btn btn-light" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                        </li>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+</body>
+</html>

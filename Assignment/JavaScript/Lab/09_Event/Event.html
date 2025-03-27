@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: lightseagreen;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Click the Button!</h1>
+<button id="myButton">Click Me</button>
+
+<script>
+    // Select the button by ID
+    const button = document.getElementById("myButton");
+
+    // Add an event listener for the 'click' event
+    button.addEventListener("click", () => {
+        alert("Button clicked!");
+    });
+</script>
+
+</body>
+</html>
