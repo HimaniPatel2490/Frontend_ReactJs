@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Assesment</title>
+  <style>
+    input, button {
+      padding: 10px;
+      margin: 5px;
+    }
+    button {
+      background-color: orange;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: darkorange;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      margin: 5px 0;
+      background: #f0f0f0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Todo List</h3>
+  <input type="text" id="todoInput" placeholder="Add new">
+  <button onclick="addTodo()">Add</button>
+
+  <ul id="todoList">
+    <li>Read a book</li>
+    <li>Lunch with Caro</li>
+    <li>Feed the dog</li>
+  </ul>
+
+  <script>
+    // Function to add a new todo
+    function addTodo() {
+      var input = document.getElementById("todoInput");
+      var list = document.getElementById("todoList");
+
+      var todoText = input.value.trim();
+      
+      if (todoText !== "") {
+        var li = document.createElement("li");
+        li.textContent = todoText;
+        list.appendChild(li);
+
+        // Clear the input field
+        input.value = "";
+      } else {
+        alert("Please enter a todo!");
+      }
+    }
+  </script>
+
+</body>
+</html>
