@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <script>
+        fetch("https://fakestoreapi.com/Users",{
+            method:"GET"
+        })
+        .then((res)=>{
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            let user = data.map((user,index)=>{
+                return(
+                    `
+                        <tr>
+                            <td>${user.id}</td>
+                            <td>${user.email}</td>
+                            <td>${user.username}</td>
+                            <td>${user.password}</td>
+                            <td>${user.name.firstname}</td>
+                            <td>${user.name.lastname}</td>
+                        </tr>
+                    `
+                )
+            })
+            document.querySelector("tbody").innerHTML = user.join("")
+        })
+    </script>
+</body>
+</html>
