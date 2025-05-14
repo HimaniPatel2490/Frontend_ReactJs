@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Declare an array of fruits (["apple", "banana", "cherry"]). Use JavaScript
+      to: • Add a fruit to the end of the array. • Remove the first fruit from
+      the array. • Log the modified array to the console.
+    </title>
+  </head>
+  <body>
+    <label for="fruitInput">Enter a fruit to add:</label>
+    <input type="text" id="fruitInput"><br><br>
+
+    <button onclick="addFruit()">Add Fruit to the End</button>
+    <button onclick="removeFirstFruit()">Remove First Fruit</button>
+
+    <h3>Modified Array:</h3>
+    <p id="modifiedArray"></p>
+
+    <script>
+        // Initial array of fruits
+        let fruits = ["apple", "banana", "cherry"];
+
+        // Function to add a fruit to the end of the array
+        function addFruit() {
+            const newFruit = document.getElementById("fruitInput").value;
+            if (newFruit) {
+                fruits.push(newFruit); // Add fruit to the end
+                document.getElementById("fruitInput").value = ""; // Clear input field
+                displayArray();
+            }
+        }
+
+        // Function to remove the first fruit from the array
+        function removeFirstFruit() {
+            fruits.shift(); // Remove the first element from the array
+            displayArray();
+        }
+
+        // Function to display the modified array
+        function displayArray() {
+            document.getElementById("modifiedArray").textContent = fruits.join(", ");
+        }
+
+        // Display the initial array
+        displayArray();
+    </script>
+
+  </body>
+</html>

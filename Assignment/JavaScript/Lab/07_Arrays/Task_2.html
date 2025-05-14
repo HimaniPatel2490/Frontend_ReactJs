@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a program to find the sum of all elements in an array of numbers. </title>
+</head>
+<body>
+    <label for="arrayInput">Enter numbers (separated by commas):</label>
+    <input type="text" id="arrayInput"><br><br>
+
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function sumArray(numbers) {
+            return numbers.reduce((acc, curr) => acc + curr, 0);
+        }
+
+        function calculateSum() {
+            const input = document.getElementById("arrayInput").value;
+            const numberArray = input.split(",").map(num => parseFloat(num.trim()));
+
+            const sum = sumArray(numberArray);
+
+            document.getElementById("result").textContent = `The sum of the array elements is: ${sum}`;
+        }
+    </script>
+ 
+</body>
+</html>
