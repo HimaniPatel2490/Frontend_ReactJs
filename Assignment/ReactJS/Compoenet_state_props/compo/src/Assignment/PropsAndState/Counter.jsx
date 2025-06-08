@@ -1,11 +1,11 @@
-// App.js or index.js
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom/client';
 
 class Counter extends Component {
   constructor(props) {
     super(props);
-    this.state = { count: 0 };
+    this.state = {
+      count: 0
+    };
   }
 
   increment = () => {
@@ -22,5 +22,14 @@ class Counter extends Component {
   }
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Counter />);
+
+function Count() {
+  return (
+    <div>
+      <Counter/>
+    </div>
+  );
+}
+
+export default Count;
+
