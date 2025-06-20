@@ -1,0 +1,16 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+.search-container input {
+  padding: 8px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.search-container ul {
+  list-style: none;
+  padding: 0;
+}
