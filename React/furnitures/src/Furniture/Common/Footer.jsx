@@ -1,4 +1,9 @@
-<footer className="footer-section">
+import React from 'react';
+
+function Footer() {
+  return (
+    <div>
+      <footer className="footer-section">
   <div className="container relative">
     <div className="sofa-img">
       <img src="images/sofa.png" alt="Image" className="img-fluid" />
@@ -6,7 +11,7 @@
     <div className="row">
       <div className="col-lg-8">
         <div className="subscription-form">
-          <h3 className="d-flex align-items-center"><span className="me-1"><img src="images/envelope-outline.svg" alt="Image" className="img-fluid" /></span><span>Subscribe to Newsletter</span></h3>
+          <h3 className="d-flex align-items-center"><span className="me-1"><img src="images/envelope-outline.svg" alt="Image" className="img-fluid" /></span><span>Subscribe to OurWeb</span></h3>
           <form action="#" className="row g-3">
             <div className="col-auto">
               <input type="text" className="form-control" placeholder="Enter your name" />
@@ -25,7 +30,7 @@
     </div>
     <div className="row g-5 mb-5">
       <div className="col-lg-4">
-        <div className="mb-4 footer-logo-wrap"><a href="#" className="footer-logo">Furni<span>.</span></a></div>
+        <div className="mb-4 footer-logo-wrap"><a href="#" className="footer-logo">Furniture</a></div>
         <p className="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
         <ul className="list-unstyled custom-social">
           <li><a href="#"><span className="fa fa-brands fa-facebook-f" /></a></li>
@@ -72,7 +77,7 @@
     <div className="border-top copyright">
       <div className="row pt-4">
         <div className="col-lg-6">
-          <p className="mb-2 text-center text-lg-start">Copyright ©. All Rights Reserved. — Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a>  {/* License information: https://untree.co/license/ */}
+          <p className="mb-2 text-center text-lg-start">Copyright ©. All Rights Reserved. — Designed with love by Himani Patel 
           </p>
         </div>
         <div className="col-lg-6 text-center text-lg-end">
@@ -85,3 +90,9 @@
     </div>
   </div>
 </footer>
+
+    </div>
+  );
+}
+
+export default Footer;
