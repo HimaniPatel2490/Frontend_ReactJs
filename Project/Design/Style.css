@@ -1,0 +1,32 @@
+body {
+  background:purple;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background:plum;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+.about, .contact {
+  margin-bottom: 30px;
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
