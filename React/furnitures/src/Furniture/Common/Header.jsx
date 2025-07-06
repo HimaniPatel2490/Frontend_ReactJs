@@ -14,10 +14,10 @@ function Header() {
       <ul className="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
         <li><NavLink className="nav-link" to="/">Home</NavLink></li>
         <li><NavLink className="nav-link" to="shop">Shop</NavLink></li>
-        <li><NavLink className="nav-link" to="About">About us</NavLink></li>
-        <li><NavLink className="nav-link" to="Service">Services</NavLink></li>
-        <li><NavLink className="nav-link" to="Blog">Blog</NavLink></li>
-        <li><NavLink className="nav-link" to="Contact">Contact us</NavLink></li>
+        <li><NavLink className="nav-link" to="about">About us</NavLink></li>
+        <li><NavLink className="nav-link" to="service">Services</NavLink></li>
+        <li><NavLink className="nav-link" to="blog">Blog</NavLink></li>
+        <li><NavLink className="nav-link" to="contact">Contact us</NavLink></li>
       </ul>
       <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
         <li><a className="nav-link" href="#"><img src="images/user.svg" /></a></li>
